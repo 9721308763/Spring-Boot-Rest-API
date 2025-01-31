@@ -1,6 +1,5 @@
 package com.ems.entity;
 
-import com.ems.dto.EmployeeDto;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -26,6 +25,10 @@ public class Employee {
         this.lastName = lastName;
         this.email = email;
     }
+    public Employee(){
+
+    }
+    
 
     // Getters
     public int getId() {
@@ -37,11 +40,11 @@ public class Employee {
     }
 
     public String getLastName() {
-        return lastName;
+        return this.lastName;
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
     // Setters
